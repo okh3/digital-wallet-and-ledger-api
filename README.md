@@ -64,7 +64,7 @@ The application includes Development-Only utility endpoints to make testing seam
 
 ---
 
-## 🛡️ Senior Engineering Features Demonstrated
+## 🛡️ Features Demonstrated
 
 ### 1. Distributed Idempotency (Redis)
 Financial systems must survive client network drops and accidental retries. Money-movement endpoints are protected by an `IEndpointFilter` backed by **Redis**. Duplicate requests with the same Idempotency Key are short-circuited, returning the cached response to prevent catastrophic double-spending.
